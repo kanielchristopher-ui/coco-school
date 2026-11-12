@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Sports and athletics">
+  <rect width="800" height="600" fill="#eef3fa"/>
+  <rect x="0" y="0" width="800" height="200" fill="#dce7f4"/>
+  <circle cx="700" cy="80" r="48" fill="#f2ce6b"/>
+  <rect x="0" y="360" width="800" height="240" fill="#7fb08a"/>
+  <path d="M0 360 Q 400 330 800 360 L 800 380 L 0 380 Z" fill="#9fc4a2"/>
+  <g stroke="#ffffff" stroke-width="4" stroke-opacity="0.9">
+    <line x1="70" y1="470" x2="730" y2="470"/>
+    <line x1="70" y1="400" x2="730" y2="400"/>
+  </g>
+  <line x1="400" y1="400" x2="400" y2="470" stroke="#ffffff" stroke-width="4" stroke-opacity="0.9"/>
+  <rect x="70" y="470" width="80" height="6" rx="3" fill="#ffffff"/>
+  <g fill="#16304f">
+    <circle cx="320" cy="428" r="20"/>
+    <circle cx="365" cy="428" r="20"/>
+    <circle cx="410" cy="428" r="20"/>
+    <circle cx="455" cy="428" r="20"/>
+  </g>
+  <g stroke="#16304f" stroke-width="5" stroke-linecap="round">
+    <line x1="320" y1="448" x2="300" y2="470"/>
+    <line x1="320" y1="448" x2="332" y2="470"/>
+    <line x1="365" y1="448" x2="352" y2="470"/>
+    <line x1="365" y1="448" x2="378" y2="470"/>
+    <line x1="410" y1="448" x2="397" y2="470"/>
+    <line x1="410" y1="448" x2="423" y2="470"/>
+    <line x1="455" y1="448" x2="442" y2="470"/>
+    <line x1="455" y1="448" x2="468" y2="470"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-width="6">
+    <circle cx="455" cy="428" r="20"/>
+  </g>
+  <circle cx="600" cy="430" r="22" fill="#d4a62e"/>
+  <path d="M600 408 Q 612 418 622 410 Q 612 430 600 452 Q 588 430 578 410 Q 588 418 600 408 Z" fill="#ffffff"/>
+  <circle cx="640" cy="424" r="9" fill="#16304f"/>
+  <rect x="40" y="520" width="720" height="10" rx="5" fill="#d4a62e"/>
+</svg>

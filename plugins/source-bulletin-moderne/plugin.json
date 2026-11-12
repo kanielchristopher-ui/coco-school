@@ -1,0 +1,11 @@
+{
+  "plugin_id": "bulletin-moderne",
+  "name": "Bulletin moderne",
+  "version": "1.0.0",
+  "author": "Démo",
+  "provides": {
+    "templates": [
+      {"id": "moderne", "label": "Moderne (couleur)", "html": "templates/bulletin.html", "css": "templates/bulletin.css", "levels": ["primaire", "secondaire"]}
+    ]
+  }
+}

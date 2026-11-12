@@ -1,0 +1,37 @@
+# ============================================================
+#  School Management System - Public .htaccess
+#  Routes every request that is not a real file to index.php,
+#  enabling clean URLs such as /dashboard/index.
+# ============================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # NOTE: no RewriteBase is set on purpose. The rule below resolves index.php
+    # relative to this directory, so it works both in a sub-directory install
+    # (e.g. /school-management/public/) and as the document root.
+
+    # Do not rewrite existing files or directories (assets, uploads).
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# Block access to hidden files (e.g. .htaccess itself).
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Basic security headers.
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Disable directory listing.
+Options -Indexes
+
+# Default charset.
+AddDefaultCharset UTF-8

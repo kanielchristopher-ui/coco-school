@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "scheme_id": "rdc-primaire",
+  "label": "RDC - Primaire et maternelle",
+  "level": [
+    "maternelle",
+    "primaire"
+  ],
+  "periods_per_year": 6,
+  "terms": [
+    {
+      "id": "T1",
+      "label": "1er trimestre",
+      "steps": [
+        {
+          "id": "P1",
+          "type": "period",
+          "label": "1ère période",
+          "max_points": 10,
+          "weight": 1
+        },
+        {
+          "id": "P2",
+          "type": "period",
+          "label": "2ème période",
+          "max_points": 10,
+          "weight": 1
+        },
+        {
+          "id": "EX1",
+          "type": "exam",
+          "label": "Examen",
+          "max_points": 20,
+          "weight": 1
+        },
+        {
+          "id": "TOTAL_T1",
+          "type": "total",
+          "label": "Total trimestriel",
+          "formula_id": "term_total"
+        }
+      ]
+    },
+    {
+      "id": "T2",
+      "label": "2ème trimestre",
+      "steps": [
+        {
+          "id": "P3",
+          "type": "period",
+          "label": "3ème période",
+          "max_points": 10,
+          "weight": 1
+        },
+        {
+          "id": "P4",
+          "type": "period",
+          "label": "4ème période",
+          "max_points": 10,
+          "weight": 1
+        },
+        {
+          "id": "EX2",
+          "type": "exam",
+          "label": "Examen",
+          "max_points": 20,
+          "weight": 1
+        },
+        {
+          "id": "TOTAL_T2",
+          "type": "total",
+          "label": "Total trimestriel",
+          "formula_id": "term_total"
+        }
+      ]
+    },
+    {
+      "id": "T3",
+      "label": "3ème trimestre",
+      "steps": [
+        {
+          "id": "P5",
+          "type": "period",
+          "label": "5ème période",
+          "max_points": 10,
+          "weight": 1
+        },
+        {
+          "id": "P6",
+          "type": "period",
+          "label": "6ème période",
+          "max_points": 10,
+          "weight": 1
+        },
+        {
+          "id": "EX3",
+          "type": "exam",
+          "label": "Examen",
+          "max_points": 20,
+          "weight": 1
+        },
+        {
+          "id": "TOTAL_T3",
+          "type": "total",
+          "label": "Total trimestriel",
+          "formula_id": "term_total"
+        }
+      ]
+    }
+  ],
+  "customizable": [
+    "labels",
+    "max_points",
+    "weights",
+    "formulas",
+    "display_order"
+  ]
+}

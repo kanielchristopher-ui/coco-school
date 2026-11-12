@@ -1,0 +1,16 @@
+# ============================================================
+#  School Management System - Root .htaccess
+#  For deployments where the document root points at the
+#  project root (instead of the public/ folder), forward all
+#  requests into public/. Recommended deployment, however, is
+#  to point the virtual host / docroot directly at public/.
+# ============================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteRule ^$ public/ [L]
+    RewriteRule (.*) public/$1 [L]
+</IfModule>
+
+Options -Indexes

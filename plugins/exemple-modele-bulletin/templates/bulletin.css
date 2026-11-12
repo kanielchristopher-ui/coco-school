@@ -1,0 +1,4 @@
+.bulletin-sheet { font-family: system-ui, sans-serif; max-width: 860px; margin: 0 auto; padding: 24px; background: #fff; color: #111; }
+.bulletin-sheet table { width: 100%; border-collapse: collapse; }
+.bulletin-sheet th, .bulletin-sheet td { border: 1px solid #999; padding: 4px 6px; text-align: center; }
+.bulletin-sheet .l { text-align: left; }

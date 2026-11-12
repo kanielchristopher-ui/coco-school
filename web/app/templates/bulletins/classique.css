@@ -1,0 +1,24 @@
+.bl { font-family: Georgia, "Times New Roman", serif; color: #111; background: #fff; max-width: 900px; margin: 0 auto; padding: 22px 26px; border: 2px solid #111; }
+.bl-head { text-align: center; border-bottom: 2px double #111; padding-bottom: 10px; margin-bottom: 12px; }
+.bl-republic { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+.bl-head h1 { font-size: 22px; margin: 6px 0 0; text-transform: uppercase; }
+.bl-head h2 { font-size: 17px; margin: 8px 0 0; }
+.bl-sub, .bl-year { font-size: 12px; }
+.bl-student { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px 14px; margin-bottom: 12px; font-size: 12.5px; }
+.bl-student span { display: block; font-size: 10.5px; text-transform: uppercase; color: #555; }
+.bl-student strong { border-bottom: 1px dotted #666; display: block; min-height: 18px; }
+.bl-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.bl-table th, .bl-table td { border: 1px solid #111; padding: 4px 6px; text-align: center; }
+.bl-table th small { display: block; font-weight: 400; font-size: 10px; }
+.bl-table .left { text-align: left; }
+.bl-table thead th { background: #eee; }
+.bl-table .total, .bl-table th.total { background: #f4f4f4; font-weight: 700; }
+.bl-table tfoot td { font-weight: 700; background: #fafafa; }
+.bl-result { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 14px 0; }
+.bl-result .box { border: 1px solid #111; padding: 6px 8px; text-align: center; }
+.bl-result span { display: block; font-size: 10.5px; text-transform: uppercase; color: #555; }
+.bl-result strong { font-size: 16px; }
+.bl-sign { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; text-align: center; font-size: 12px; margin-top: 10px; }
+.bl-foot { text-align: center; font-size: 10px; color: #666; margin-top: 14px; border-top: 1px solid #ccc; padding-top: 6px; }
+@media (max-width: 640px) { .bl { padding: 12px; } .bl-student { grid-template-columns: 1fr 1fr; } .bl-result { grid-template-columns: 1fr 1fr; } .bl-table { font-size: 11px; display: block; overflow-x: auto; } }
+@media print { .bl { border: 0; max-width: none; padding: 0; } @page { size: A4; margin: 12mm; } }

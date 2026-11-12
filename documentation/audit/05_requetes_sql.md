@@ -1,0 +1,74 @@
+# 05 — Requêtes SQL par fichier
+
+Total : 383 SELECT, 4 INSERT, 31 UPDATE, 1 DELETE.
+
+| Fichier | SELECT | INSERT | UPDATE | DELETE | Concaténation variable |
+|---|---|---|---|---|---|
+| app/controllers/AttendanceController.php | 15 | 0 | 2 | 0 | 2 |
+| app/controllers/AuthController.php | 2 | 0 | 0 | 0 | 0 |
+| app/controllers/BulletinsController.php | 27 | 1 | 2 | 0 | 0 |
+| app/controllers/ClassController.php | 4 | 0 | 1 | 0 | 2 |
+| app/controllers/DashboardController.php | 46 | 0 | 0 | 0 | 0 |
+| app/controllers/DisciplineController.php | 4 | 0 | 0 | 0 | 0 |
+| app/controllers/EventController.php | 1 | 0 | 0 | 0 | 0 |
+| app/controllers/ExamController.php | 6 | 0 | 2 | 0 | 3 |
+| app/controllers/FeeController.php | 7 | 0 | 0 | 0 | 0 |
+| app/controllers/FinanceController.php | 29 | 0 | 1 | 0 | 8 |
+| app/controllers/GradeController.php | 7 | 0 | 2 | 0 | 2 |
+| app/controllers/InventoryController.php | 2 | 0 | 0 | 0 | 0 |
+| app/controllers/LicenseController.php | 2 | 0 | 0 | 0 | 0 |
+| app/controllers/MessageController.php | 14 | 0 | 0 | 0 | 0 |
+| app/controllers/ParentController.php | 3 | 0 | 0 | 0 | 0 |
+| app/controllers/PayrollController.php | 2 | 0 | 0 | 0 | 0 |
+| app/controllers/ProfileController.php | 0 | 0 | 1 | 0 | 0 |
+| app/controllers/ReportController.php | 12 | 0 | 0 | 0 | 0 |
+| app/controllers/ResultController.php | 30 | 0 | 2 | 0 | 0 |
+| app/controllers/SettingsController.php | 2 | 1 | 1 | 0 | 0 |
+| app/controllers/StaffController.php | 1 | 0 | 1 | 0 | 2 |
+| app/controllers/StudentController.php | 3 | 0 | 1 | 0 | 2 |
+| app/controllers/SubjectController.php | 0 | 0 | 1 | 0 | 2 |
+| app/controllers/TeacherController.php | 6 | 0 | 1 | 0 | 2 |
+| app/controllers/TransportController.php | 1 | 0 | 0 | 0 | 0 |
+| app/controllers/UserController.php | 16 | 0 | 1 | 0 | 3 |
+| app/controllers/WebsiteController.php | 6 | 0 | 0 | 0 | 0 |
+| app/core/Auth.php | 9 | 0 | 0 | 0 | 0 |
+| app/core/BulletinEngine.php | 9 | 0 | 0 | 0 | 0 |
+| app/core/BulletinTemplates.php | 3 | 0 | 0 | 0 | 0 |
+| app/core/Database.php | 0 | 1 | 1 | 1 | 0 |
+| app/core/Helper.php | 2 | 0 | 0 | 0 | 0 |
+| app/core/LicenseGate.php | 1 | 0 | 0 | 0 | 0 |
+| app/core/Model.php | 5 | 0 | 0 | 0 | 1 |
+| app/core/OfficialId.php | 1 | 1 | 0 | 0 | 0 |
+| app/lang/fr/strings_interface.php | 17 | 0 | 1 | 0 | 0 |
+| app/lang/fr/strings_interface2.php | 7 | 0 | 2 | 0 | 0 |
+| app/lang/fr/strings_messages.php | 3 | 0 | 4 | 0 | 0 |
+| app/models/Attendance.php | 2 | 0 | 0 | 0 | 0 |
+| app/models/ClassRoom.php | 2 | 0 | 0 | 0 | 0 |
+| app/models/Event.php | 1 | 0 | 0 | 0 | 0 |
+| app/models/Exam.php | 6 | 0 | 0 | 0 | 0 |
+| app/models/Expense.php | 2 | 0 | 0 | 0 | 0 |
+| app/models/Fee.php | 3 | 0 | 0 | 0 | 0 |
+| app/models/FeeCollection.php | 3 | 0 | 0 | 0 | 0 |
+| app/models/Grade.php | 2 | 0 | 0 | 0 | 0 |
+| app/models/InventoryItem.php | 1 | 0 | 0 | 0 | 0 |
+| app/models/Message.php | 3 | 0 | 0 | 0 | 0 |
+| app/models/Notification.php | 2 | 0 | 0 | 0 | 0 |
+| app/models/Payment.php | 4 | 0 | 0 | 0 | 0 |
+| app/models/PayrollRecord.php | 2 | 0 | 0 | 0 | 0 |
+| app/models/Purchase.php | 1 | 0 | 0 | 0 | 0 |
+| app/models/Result.php | 8 | 0 | 0 | 0 | 0 |
+| app/models/Salary.php | 1 | 0 | 0 | 0 | 0 |
+| app/models/StockIssue.php | 1 | 0 | 0 | 0 | 0 |
+| app/models/Student.php | 13 | 0 | 0 | 0 | 0 |
+| app/models/StudentFee.php | 5 | 0 | 0 | 0 | 0 |
+| app/models/Subject.php | 3 | 0 | 0 | 0 | 0 |
+| app/models/Teacher.php | 7 | 0 | 0 | 0 | 0 |
+| app/models/TransportAssignment.php | 1 | 0 | 0 | 0 | 0 |
+| app/models/User.php | 2 | 0 | 0 | 0 | 0 |
+| app/models/Vehicle.php | 1 | 0 | 0 | 0 | 0 |
+| app/views/classes/_form.php | 0 | 0 | 1 | 0 | 0 |
+| app/views/students/_form.php | 0 | 0 | 1 | 0 | 0 |
+| app/views/subjects/_form.php | 0 | 0 | 1 | 0 | 0 |
+| app/views/teachers/_form.php | 0 | 0 | 1 | 0 | 0 |
+| app/views/users/create.php | 1 | 0 | 0 | 0 | 0 |
+| app/views/users/edit.php | 1 | 0 | 0 | 0 | 0 |

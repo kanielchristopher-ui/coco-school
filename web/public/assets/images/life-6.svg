@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Creative arts and music">
+  <rect width="800" height="600" fill="#eef3fa"/>
+  <rect x="0" y="0" width="800" height="180" fill="#dce7f4"/>
+  <rect x="200" y="130" width="400" height="60" rx="8" fill="#16304f"/>
+  <g fill="#ffffff" opacity="0.9">
+    <circle cx="250" cy="160" r="12"/>
+    <circle cx="300" cy="160" r="12"/>
+    <circle cx="350" cy="160" r="12"/>
+    <circle cx="400" cy="160" r="12"/>
+    <circle cx="450" cy="160" r="12"/>
+    <circle cx="500" cy="160" r="12"/>
+    <circle cx="550" cy="160" r="12"/>
+  </g>
+  <ellipse cx="300" cy="330" rx="110" ry="130" fill="#d4a62e"/>
+  <circle cx="300" cy="330" r="34" fill="#16304f"/>
+  <path d="M320 330 Q 390 300 400 250 Q 410 300 480 320 L 430 340 Z" fill="#c9a227"/>
+  <g fill="#ffffff">
+    <rect x="560" y="380" width="80" height="120" rx="8"/>
+    <rect x="610" y="340" width="22" height="200" rx="11"/>
+  </g>
+  <g stroke="#16304f" stroke-width="6" stroke-linecap="round">
+    <path d="M500 240 Q 560 220 590 280"/>
+    <path d="M515 260 Q 555 250 575 285"/>
+    <path d="M505 245 Q 545 232 570 268"/>
+  </g>
+  <g fill="#16304f">
+    <circle cx="640" cy="480" r="16"/>
+    <rect x="620" y="494" width="40" height="26" rx="8"/>
+    <circle cx="420" cy="470" r="18"/>
+    <rect x="398" y="486" width="44" height="34" rx="10"/>
+  </g>
+  <rect x="40" y="540" width="720" height="10" rx="5" fill="#d4a62e"/>
+</svg>

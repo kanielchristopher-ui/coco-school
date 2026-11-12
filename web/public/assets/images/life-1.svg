@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Classroom learning">
+  <rect width="800" height="600" fill="#eef3fa"/>
+  <rect x="0" y="0" width="800" height="180" fill="#dce7f4"/>
+  <rect x="60" y="60" width="680" height="90" rx="10" fill="#16304f"/>
+  <g stroke="#ffffff" stroke-width="4" stroke-opacity="0.85">
+    <line x1="110" y1="130" x2="250" y2="130"/>
+    <line x1="120" y1="150" x2="220" y2="150"/>
+    <line x1="430" y1="130" x2="540" y2="130"/>
+    <line x1="440" y1="150" x2="510" y2="150"/>
+    <line x1="580" y1="130" x2="690" y2="130"/>
+    <line x1="590" y1="150" x2="660" y2="150"/>
+  </g>
+  <rect x="40" y="520" width="720" height="10" rx="5" fill="#d4a62e"/>
+  <rect x="40" y="180" width="720" height="8" rx="4" fill="#c3d2e4"/>
+  <rect x="90" y="300" width="150" height="130" rx="10" fill="#ffffff"/>
+  <rect x="330" y="300" width="150" height="130" rx="10" fill="#ffffff"/>
+  <rect x="570" y="300" width="150" height="130" rx="10" fill="#ffffff"/>
+  <g fill="#0a1d3c">
+    <circle cx="165" cy="370" r="22"/>
+    <rect x="135" y="390" width="60" height="40" rx="10"/>
+    <circle cx="405" cy="370" r="22"/>
+    <rect x="375" y="390" width="60" height="40" rx="10"/>
+    <circle cx="645" cy="370" r="22"/>
+    <rect x="615" y="390" width="60" height="40" rx="10"/>
+  </g>
+  <circle cx="90" cy="238" r="24" fill="#d4a62e"/>
+  <rect x="68" y="262" width="44" height="46" rx="10" fill="#16304f"/>
+</svg>

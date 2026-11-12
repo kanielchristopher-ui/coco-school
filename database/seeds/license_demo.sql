@@ -1,0 +1,4 @@
+-- Licence de DÉMONSTRATION (signée avec la clé de développement ; valable jusqu'au 2027-08-31 + 30 jours de grâce).
+-- À remplacer par une vraie licence émise avec VOTRE clé (tools/license_tool.py issue).
+INSERT INTO `licenses` (`license_id`, `token`, `holder`, `valid_from`, `valid_until`, `status`) VALUES
+('LIC-DEMO-2026', 'CCL1.eyJ2IjoxLCJsaWNlbnNlX2lkIjoiTElDLURFTU8tMjAyNiIsImhvbGRlciI6IkNvbXBsZXhlIFNjb2xhaXJlIExlcyDDiXRvaWxlcyBkdSBDb25nbyAoRMOJTU8pIiwiaXNzdWVkX2F0IjoiMjAyNi0wOS0wMSIsInZhbGlkX2Zyb20iOiIyMDI2LTA5LTAxIiwidmFsaWRfdW50aWwiOiIyMDI3LTA4LTMxIiwiZ3JhY2VfZGF5cyI6MzAsImVkaXRpb24iOiJzdGFuZGFyZCIsImxldmVscyI6WyJtYXRlcm5lbCIsInByaW1haXJlIiwic2Vjb25kYWlyZSJdLCJtb2R1bGVzIjpbIioiXSwibWF4X3N0dWRlbnRzIjp7Im1hdGVybmVsIjoxMDAsInByaW1haXJlIjo1MDAsInNlY29uZGFpcmUiOjgwMH19.fZ8ibw2vYefYOCALOBVRTOE1FakRSJWAK1uDSRIBfi_bd3DSuteElM2ygUTcg_o-yH1dm65oiZ-3cRpTMP_yCw', 'Complexe Scolaire Les Étoiles du Congo (DÉMO)', '2026-09-01', '2027-08-31', 'active');

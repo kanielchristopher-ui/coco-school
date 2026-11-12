@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Wadani International School logo">
+  <defs>
+    <linearGradient id="wsShield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f4c81"/>
+      <stop offset="1" stop-color="#0b3a63"/>
+    </linearGradient>
+    <linearGradient id="wsSun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0a500"/>
+      <stop offset="1" stop-color="#c98a00"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="62" height="62" rx="16" fill="url(#wsShield)" stroke="#f0a500" stroke-width="2"/>
+  <path d="M32 12 L46 19 L46 31 C46 42 40 48 32 52 C24 48 18 42 18 31 L18 19 Z" fill="#ffffff" opacity="0.12"/>
+  <path d="M32 14 L43 20 L43 31 C43 40.5 38 46 32 49.5 C26 46 21 40.5 21 31 L21 20 Z" fill="#ffffff" opacity="0.22"/>
+  <circle cx="32" cy="30" r="9" fill="url(#wsSun)"/>
+  <path d="M32 12 L27 21 L37 21 Z" fill="#f0a500"/>
+  <path d="M22 26 C25 22.5 39 22.5 42 26 L42 33 C39 29.5 25 29.5 22 33 Z" fill="#0b3a63"/>
+  <path d="M22 34 C25 30.5 39 30.5 42 34 L42 39 C39 35.5 25 35.5 22 39 Z" fill="#0b3a63"/>
+  <path d="M32 11.5 L27.2 21.2 L36.8 21.2 Z" fill="#0b3a63"/>
+</svg>

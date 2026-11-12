@@ -1,0 +1,24 @@
+<article class="bm">
+  <header class="bm-top">
+    <div><h1>{{school.name}}</h1><p>{{school.address}}</p></div>
+    <div class="bm-badge"><span>{{period.label}}</span><small>{{session.name}}</small></div>
+  </header>
+  <section class="bm-who">
+    <h2>{{student.name}}</h2>
+    <p>{{student.class}} · PERM {{student.perm}}</p>
+  </section>
+  <div class="bm-kpis">
+    <div><small>Pourcentage</small><strong>{{totals.percent}} %</strong></div>
+    <div><small>Mention</small><strong>{{totals.mention}}</strong></div>
+    <div><small>Place</small><strong>{{totals.rank}}/{{totals.class_size}}</strong></div>
+    <div><small>Décision</small><strong>{{totals.decision}}</strong></div>
+  </div>
+  <div class="bm-scroll">
+  <table class="bm-table">
+    <thead><tr><th class="l">Cours</th>{{#each columns as c}}<th>{{c.label}}<small>/{{c.max}}</small></th>{{/each}}</tr></thead>
+    <tbody>{{#each rows as r}}<tr><td class="l">{{r.subject}}</td>{{#each r.cells as x}}<td class="{{x.kind}}">{{x.value}}</td>{{/each}}</tr>{{/each}}</tbody>
+    <tfoot><tr><td class="l">Totaux</td>{{#each sums as x}}<td>{{x.value}}</td>{{/each}}</tr><tr><td class="l">%</td>{{#each percents as x}}<td>{{x.value}}</td>{{/each}}</tr></tfoot>
+  </table>
+  </div>
+  <footer class="bm-foot"><span>{{signature.title}} {{signature.name}}</span><span>N° {{meta.number}} · v{{meta.version}} · {{meta.date}}</span></footer>
+</article>

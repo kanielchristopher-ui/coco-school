@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "scheme_id": "rdc-secondaire",
+  "label": "RDC - Secondaire",
+  "level": [
+    "secondaire"
+  ],
+  "terms": [
+    {
+      "id": "S1",
+      "label": "1er semestre",
+      "steps": [
+        {
+          "id": "P1",
+          "type": "period",
+          "label": "Première période",
+          "max_points": 20,
+          "weight": 1
+        },
+        {
+          "id": "P2",
+          "type": "period",
+          "label": "Deuxième période",
+          "max_points": 20,
+          "weight": 1
+        },
+        {
+          "id": "EX1",
+          "type": "exam",
+          "label": "Examen",
+          "max_points": 40,
+          "weight": 1
+        },
+        {
+          "id": "TOTAL_S1",
+          "type": "total",
+          "label": "Total 1er semestre",
+          "formula_id": "semester_total"
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "label": "2ème semestre",
+      "steps": [
+        {
+          "id": "P3",
+          "type": "period",
+          "label": "Troisième période",
+          "max_points": 20,
+          "weight": 1
+        },
+        {
+          "id": "P4",
+          "type": "period",
+          "label": "Quatrième période",
+          "max_points": 20,
+          "weight": 1
+        },
+        {
+          "id": "EX2",
+          "type": "exam",
+          "label": "Examen",
+          "max_points": 40,
+          "weight": 1
+        },
+        {
+          "id": "TOTAL_S2",
+          "type": "total",
+          "label": "Total 2ème semestre",
+          "formula_id": "semester_total"
+        }
+      ]
+    }
+  ],
+  "final_steps": [
+    {
+      "id": "TOTAL_GENERAL",
+      "type": "total",
+      "label": "Total général",
+      "formula_id": "year_total"
+    }
+  ],
+  "customizable": [
+    "labels",
+    "max_points",
+    "weights",
+    "formulas",
+    "display_order"
+  ]
+}

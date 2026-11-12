@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Graduation celebration">
+  <rect width="800" height="600" fill="#eef3fa"/>
+  <rect x="0" y="0" width="800" height="180" fill="#dce7f4"/>
+  <path d="M400 120 L560 170 L400 220 L240 170 Z" fill="#16304f"/>
+  <path d="M560 170 L560 224 Q 560 250 400 270 Q 240 250 240 224 L 240 170" fill="none" stroke="#16304f" stroke-width="6"/>
+  <path d="M400 222 L400 270" stroke="#16304f" stroke-width="6"/>
+  <circle cx="400" cy="300" r="14" fill="#d4a62e"/>
+  <path d="M520 180 L660 132" stroke="#16304f" stroke-width="6" stroke-linecap="round"/>
+  <rect x="380" y="330" width="40" height="200" rx="8" fill="#d4a62e"/>
+  <rect x="340" y="400" width="120" height="130" rx="12" fill="#ffffff"/>
+  <path d="M340 470 L460 470 L460 500 Q 460 530 400 530 Q 340 530 340 500 Z" fill="#d4a62e"/>
+  <g fill="#16304f">
+    <circle cx="180" cy="400" r="22"/>
+    <rect x="154" y="420" width="52" height="46" rx="10"/>
+    <circle cx="600" cy="430" r="22"/>
+    <rect x="574" y="450" width="52" height="46" rx="10"/>
+  </g>
+  <g fill="#f2ce6b">
+    <rect x="150" y="200" width="10" height="30" rx="5" transform="rotate(30 155 215)"/>
+    <rect x="630" y="220" width="10" height="30" rx="5" transform="rotate(-20 635 235)"/>
+    <rect x="690" y="150" width="8" height="24" rx="4" transform="rotate(45 694 162)"/>
+  </g>
+  <circle cx="160" cy="200" r="5" fill="#d4a62e"/>
+  <circle cx="660" cy="180" r="5" fill="#d4a62e"/>
+  <circle cx="120" cy="240" r="4" fill="#d4a62e"/>
+  <circle cx="700" cy="260" r="4" fill="#d4a62e"/>
+  <rect x="40" y="540" width="720" height="10" rx="5" fill="#d4a62e"/>
+</svg>

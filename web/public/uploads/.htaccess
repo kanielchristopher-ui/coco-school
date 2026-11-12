@@ -1,0 +1,7 @@
+# Prevent execution of scripts inside uploads.
+Options -ExecCGI
+<FilesMatch "\.(php|phtml|phar|pl|py|cgi|sh)$">
+    Require all denied
+</FilesMatch>
+
+# Allow images and common static files to be served normally.

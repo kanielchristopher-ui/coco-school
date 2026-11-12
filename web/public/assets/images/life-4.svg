@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Science laboratory">
+  <rect width="800" height="600" fill="#eef3fa"/>
+  <rect x="0" y="0" width="800" height="180" fill="#dce7f4"/>
+  <rect x="90" y="120" width="620" height="10" rx="5" fill="#16304f"/>
+  <rect x="300" y="360" width="200" height="130" rx="10" fill="#16304f"/>
+  <rect x="140" y="210" width="120" height="150" rx="12" fill="#ffffff"/>
+  <path d="M200 210 L200 150 L164 176 Z" fill="#7fb7d9"/>
+  <rect x="150" y="252" width="100" height="12" rx="6" fill="#d4a62e"/>
+  <circle cx="380" cy="200" r="46" stroke="#16304f" stroke-width="6" fill="none"/>
+  <ellipse cx="380" cy="200" rx="46" ry="18" fill="none" stroke="#16304f" stroke-width="4"/>
+  <circle cx="380" cy="200" r="10" fill="#d4a62e"/>
+  <path d="M420 158 L470 120" stroke="#16304f" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="478" cy="114" r="10" fill="#d4a62e"/>
+  <path d="M340 158 L290 120" stroke="#16304f" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="282" cy="114" r="10" fill="#d4a62e"/>
+  <g>
+    <path d="M560 520 L560 300 Q 560 260 600 260 L 640 300 L 640 520 Z" fill="#7fb7d9" opacity="0.85"/>
+    <rect x="552" y="480" width="96" height="16" rx="8" fill="#16304f"/>
+    <path d="M560 300 L640 300" stroke="#ffffff" stroke-width="4" opacity="0.6"/>
+  </g>
+  <circle cx="360" cy="500" r="34" fill="#7fb7d9" opacity="0.85"/>
+  <rect x="346" y="520" width="28" height="24" rx="6" fill="#16304f"/>
+  <rect x="40" y="540" width="720" height="10" rx="5" fill="#d4a62e"/>
+</svg>

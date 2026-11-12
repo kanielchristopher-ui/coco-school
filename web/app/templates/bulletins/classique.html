@@ -1,0 +1,54 @@
+<article class="bl">
+  <header class="bl-head">
+    <div class="bl-republic">République Démocratique du Congo<br>Ministère de l'Enseignement Primaire, Secondaire et Technique</div>
+    <h1>{{school.name}}</h1>
+    <div class="bl-sub">{{school.address}} {{#if school.phone}}· Tél. {{school.phone}}{{/if}}</div>
+    <h2>Bulletin scolaire — {{period.label}}</h2>
+    <div class="bl-year">Année scolaire {{session.name}}</div>
+  </header>
+
+  <section class="bl-student">
+    <div><span>Nom, postnom et prénom</span><strong>{{student.name}}</strong></div>
+    <div><span>Classe</span><strong>{{student.class}}</strong></div>
+    <div><span>N° PERM</span><strong>{{student.perm}}</strong></div>
+    <div><span>Sexe</span><strong>{{student.gender}}</strong></div>
+    <div><span>Né(e) le</span><strong>{{student.dob}}</strong></div>
+    <div><span>À</span><strong>{{student.birth_place}}</strong></div>
+  </section>
+
+  <table class="bl-table">
+    <thead>
+      <tr>
+        <th class="left">Cours</th>
+        {{#each columns as c}}<th class="{{c.kind}}">{{c.label}}<small>Max. {{c.max}}</small></th>{{/each}}
+      </tr>
+    </thead>
+    <tbody>
+      {{#each rows as r}}
+      <tr>
+        <td class="left">{{r.subject}}</td>
+        {{#each r.cells as x}}<td class="{{x.kind}}">{{x.value}}</td>{{/each}}
+      </tr>
+      {{/each}}
+    </tbody>
+    <tfoot>
+      <tr class="sum"><td class="left">Totaux</td>{{#each sums as x}}<td class="{{x.kind}}">{{x.value}}</td>{{/each}}</tr>
+      <tr class="pct"><td class="left">Pourcentage</td>{{#each percents as x}}<td class="{{x.kind}}">{{x.value}}</td>{{/each}}</tr>
+    </tfoot>
+  </table>
+
+  <section class="bl-result">
+    <div class="box"><span>Pourcentage</span><strong>{{totals.percent}} %</strong></div>
+    <div class="box"><span>Mention</span><strong>{{totals.mention}}</strong></div>
+    <div class="box"><span>Place</span><strong>{{totals.rank}} / {{totals.class_size}}</strong></div>
+    <div class="box"><span>Décision</span><strong>{{totals.decision}}</strong></div>
+  </section>
+
+  <section class="bl-sign">
+    <div>Le/La titulaire<br><br>________________</div>
+    <div>Le Parent<br><br>________________</div>
+    <div>{{signature.title}}<br>{{signature.name}}<br>________________</div>
+  </section>
+
+  <footer class="bl-foot">Bulletin n° {{meta.number}} · version {{meta.version}} · édité le {{meta.date}}</footer>
+</article>
