@@ -59,3 +59,13 @@ body.auth-body { min-height: 100vh; margin: 0; background: radial-gradient(1200p
 .auth-right .form-check-input:checked { background-color: #6fd0b0; border-color: #6fd0b0; }
 .auth-right .text-muted, .auth-right p { color: rgba(255,255,255,.7) !important; }
 .auth-right .btn-outline-primary, .auth-right .btn-outline-secondary { color: #fff; border-color: rgba(255,255,255,.4); }
+
+
+/* v4 — moins de mouvement décoratif, entrée plus douce */
+.bubble { animation: none; }
+.auth-blob::before { animation: none; }
+.auth-blob .school-art { animation: none; }
+.auth-shell { animation: shellIn .45s var(--ease-out) both; }
+@keyframes shellIn { from { opacity: 0; transform: translateY(10px) scale(.99); } to { opacity: 1; transform: none; } }
+.auth-submit:active, .auth-back:active { transform: scale(.97); }
+.auth-shell { box-shadow: 0 24px 60px rgba(0, 0, 0, .28); }

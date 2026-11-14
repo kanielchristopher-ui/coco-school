@@ -1,3 +1,4 @@
+@import url("fonts.css");
 /* ============================================================
    School Management System - Public Website (v2)
    Premium design system. No external CSS libraries.
@@ -1307,3 +1308,29 @@ svg.ws-ico {
     }
     .ws-reveal { opacity: 1; transform: none; }
 }
+
+
+/* ============================================================
+ * v4 — typographie éditoriale et mouvement sobre
+ * ============================================================ */
+:root { --ease-out: cubic-bezier(.23, 1, .32, 1); }
+
+:root {
+    --font-head: "Outfit", "Century Gothic", "Avenir Next", system-ui, sans-serif;
+    --font-body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --shadow-sm: 0 1px 2px rgba(20, 30, 50, .05), 0 4px 12px rgba(20, 30, 50, .05);
+    --shadow-md: 0 2px 4px rgba(20, 30, 50, .05), 0 10px 26px rgba(20, 30, 50, .08);
+    --shadow-lg: 0 4px 8px rgba(20, 30, 50, .06), 0 20px 44px rgba(20, 30, 50, .12);
+}
+body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-feature-settings: "kern", "liga"; }
+h1, h2, h3, h4 { font-weight: 600; letter-spacing: -.018em; text-wrap: balance; }
+h1 { letter-spacing: -.025em; }
+p, li { text-wrap: pretty; }
+.ws-btn, .ws-nav a, .ws-eyebrow { font-family: var(--font-body); }
+.ws-btn { font-weight: 600; transition: transform .16s var(--ease-out), box-shadow .2s var(--ease-out), background-color .15s var(--ease-out), color .15s var(--ease-out), border-color .15s var(--ease-out); touch-action: manipulation; }
+.ws-btn:active { transform: scale(.97); }
+.ws-btn-gold { box-shadow: 0 1px 2px rgba(80, 60, 10, .15), 0 6px 14px rgba(120, 95, 20, .2); }
+.ws-media-badge-num, .ws-news-date-block strong { font-variant-numeric: tabular-nums; }
+@keyframes wsFadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes wsPopIn { from { opacity: 0; transform: translate(-50%, -48%) scale(.97); } to { opacity: 1; transform: translate(-50%, -50%) scale(1); } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }

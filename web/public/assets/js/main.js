@@ -122,3 +122,33 @@ window.tr = window.tr || function (s) { return s; };
         window.addEventListener('popstate', cleanupModalState);
     });
 })();
+
+/* ---------- Tableaux adaptatifs ----------
+   1) tout tableau hors .table-responsive est enveloppé pour défiler horizontalement ;
+   2) les tableaux simples (≤ 7 colonnes, sans colspan/rowspan) reçoivent des libellés
+      de colonne et s'empilent en cartes sur téléphone. Les autres défilent. */
+(function () {
+    'use strict';
+    function adapt() {
+        document.querySelectorAll('table.table').forEach(function (t) {
+            if (t.closest('.no-stack, .print-area, [data-no-adapt]')) return;
+            if (!t.closest('.table-responsive')) {
+                var w = document.createElement('div');
+                w.className = 'table-responsive';
+                t.parentNode.insertBefore(w, t);
+                w.appendChild(t);
+            }
+            var heads = t.querySelectorAll('thead tr:last-child th');
+            var rows = t.querySelectorAll('tbody tr');
+            if (!heads.length || heads.length > 7 || !rows.length || t.querySelector('[colspan], [rowspan]')) return;
+            var labels = [].map.call(heads, function (h) { return h.textContent.replace(/\s+/g, ' ').trim(); });
+            rows.forEach(function (tr) {
+                [].forEach.call(tr.children, function (td, i) {
+                    if (td.tagName === 'TD' && !td.hasAttribute('data-label')) td.setAttribute('data-label', labels[i] || '');
+                });
+            });
+            t.classList.add('table-stack');
+        });
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', adapt); else adapt();
+})();

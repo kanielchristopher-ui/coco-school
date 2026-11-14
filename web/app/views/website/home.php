@@ -8,6 +8,9 @@ $siteName = settings('school_name', APP_NAME);
 $stats = $stats ?? ['students' => 0, 'teachers' => 0, 'classes' => 0, 'years' => 10];
 $news = $news ?? [];
 $spark = '<svg class="spark" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12 12 8M10 4l3 8M20 18l8 2M18 24l6 5"/></svg>';
+$avatar = static function (string $skin, string $hair, string $bg): string {
+    return '<svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="' . $bg . '"/><path d="M10 64c2-14 12-20 22-20s20 6 22 20z" fill="#14161f" opacity=".9"/><rect x="28" y="36" width="8" height="10" rx="3" fill="' . $skin . '"/><circle cx="32" cy="27" r="12" fill="' . $skin . '"/><path d="M19.5 26c0-9 6-14 13-14s12.5 5 12.5 13c-3-5-7-7-12-7s-10 2-13.5 8z" fill="' . $hair . '"/><circle cx="27.5" cy="28" r="1.3" fill="#14161f"/><circle cx="36.5" cy="28" r="1.3" fill="#14161f"/><path d="M28.5 33c2 1.8 5 1.8 7 0" stroke="#14161f" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>';
+};
 ?>
 
 <!-- ============ Héros ============ -->
@@ -73,12 +76,13 @@ $spark = '<svg class="spark" viewBox="0 0 30 30" fill="none" stroke="currentColo
 <section class="lp-section" style="padding-top:0">
     <div class="lp-wrap">
         <div class="lp-map lp-reveal">
+            <span class="lp-pin" style="--x:97%;--y:7%;--i:0" aria-hidden="true"><i class="fas fa-school"></i></span><span class="lp-pin" style="--x:52%;--y:-3%;--i:1" aria-hidden="true"><i class="fas fa-book"></i></span><span class="lp-pin" style="--x:3%;--y:96%;--i:2" aria-hidden="true"><i class="fas fa-user-graduate"></i></span><span class="lp-pin" style="--x:60%;--y:101%;--i:3" aria-hidden="true"><i class="fas fa-receipt"></i></span><span class="lp-pin" style="--x:94%;--y:94%;--i:4" aria-hidden="true"><i class="fas fa-bell"></i></span>
             <div class="lp-map-grid">
                 <div>
                     <span class="lp-eyebrow"><?= e(t('Cashier')) ?></span><br>
                     <h2 class="lp-title"><?= $spark ?><?= e(t('Pay school fees without queues or stress')) ?></h2>
                     <p style="color:var(--muted)"><?= e(t('Every payment is recorded by the cashier, a receipt is issued, and parents can follow the balance online.')) ?></p>
-                    <div class="lp-pay"><span>💵 <?= e(t('Cash')) ?></span><span>📱 M-Pesa</span><span>📱 Airtel Money</span><span>📱 Orange Money</span><span>🏦 <?= e(t('Bank Transfer')) ?></span></div>
+                    <div class="lp-pay"><span><i class="fas fa-money-bill-wave"></i><?= e(t('Cash')) ?></span><span><i class="fas fa-mobile-screen"></i>M-Pesa</span><span><i class="fas fa-mobile-screen"></i>Airtel Money</span><span><i class="fas fa-mobile-screen"></i>Orange Money</span><span><i class="fas fa-building-columns"></i><?= e(t('Bank Transfer')) ?></span></div>
                     <div class="lp-search"><span><?= e(t('Check my child\'s balance')) ?></span><a href="<?= url('auth/login') ?>" aria-label="<?= e(t('Sign In')) ?>"><i class="fas fa-magnifying-glass"></i></a></div>
                 </div>
                 <div class="lp-steps">
@@ -97,9 +101,9 @@ $spark = '<svg class="spark" viewBox="0 0 30 30" fill="none" stroke="currentColo
     <div class="lp-wrap">
         <div class="lp-head lp-reveal"><span class="lp-eyebrow"><?= e(t('Academic Programs')) ?></span><br><h2 class="lp-title"><?= $spark ?><?= e(t('Nursery, primary, secondary: what else do you need?')) ?></h2></div>
         <div class="lp-cycles">
-            <article class="lp-cycle c1 lp-reveal"><div class="big">🧸</div><h3><?= e(t('Nursery')) ?></h3><p><?= e(t('Three years of play, language, early maths and arts to prepare for primary school.')) ?></p><span class="tag"><?= e(t('3 years')) ?></span></article>
-            <article class="lp-cycle c2 lp-reveal" style="--d:.1s"><div class="big">📚</div><h3><?= e(t('Primary')) ?></h3><p><?= e(t('Six years of solid foundations in French, maths and sciences, up to the TENAFEP.')) ?></p><span class="tag"><?= e(t('6 years')) ?> · TENAFEP</span></article>
-            <article class="lp-cycle c3 lp-reveal" style="--d:.2s"><div class="big">🎓</div><h3><?= e(t('Secondary')) ?></h3><p><?= e(t('Basic education (7th–8th) then four years of humanities, up to the State Exam.')) ?></p><span class="tag"><?= e(t('6 years')) ?> · <?= e(t('State Exam')) ?></span></article>
+            <article class="lp-cycle c1 lp-reveal"><div class="big"><i class="fas fa-shapes"></i></div><h3><?= e(t('Nursery')) ?></h3><p><?= e(t('Three years of play, language, early maths and arts to prepare for primary school.')) ?></p><span class="tag"><?= e(t('3 years')) ?></span></article>
+            <article class="lp-cycle c2 lp-reveal" style="--d:.1s"><div class="big"><i class="fas fa-book-open"></i></div><h3><?= e(t('Primary')) ?></h3><p><?= e(t('Six years of solid foundations in French, maths and sciences, up to the TENAFEP.')) ?></p><span class="tag"><?= e(t('6 years')) ?> · TENAFEP</span></article>
+            <article class="lp-cycle c3 lp-reveal" style="--d:.2s"><div class="big"><i class="fas fa-graduation-cap"></i></div><h3><?= e(t('Secondary')) ?></h3><p><?= e(t('Basic education (7th–8th) then four years of humanities, up to the State Exam.')) ?></p><span class="tag"><?= e(t('6 years')) ?> · <?= e(t('State Exam')) ?></span></article>
         </div>
     </div>
 </section>
@@ -114,7 +118,7 @@ $spark = '<svg class="spark" viewBox="0 0 30 30" fill="none" stroke="currentColo
             <a class="lp-btn lp-btn--dark" href="<?= url('contact') ?>"><?= e(t('Contact Us')) ?></a>
         </div>
         <div class="lp-bubbles lp-reveal from-right" aria-hidden="true">
-            <span class="lp-av big">👩🏿‍🏫</span><span class="lp-av a1">👦🏿</span><span class="lp-av a2">👩🏾</span><span class="lp-av a3">👧🏿</span><span class="lp-av a4">👨🏿‍💼</span>
+            <span class="lp-av big"><?= $avatar('#8a5a3c', '#14161f', '#cfe0ff') ?></span><span class="lp-av a1"><?= $avatar('#6b4430', '#14161f', '#ffe3d1') ?></span><span class="lp-av a2"><?= $avatar('#a26b49', '#3a2418', '#d9f0e4') ?></span><span class="lp-av a3"><?= $avatar('#7a4e35', '#14161f', '#fff0c9') ?></span><span class="lp-av a4"><?= $avatar('#5c3b2a', '#14161f', '#e3dcff') ?></span>
             <span class="lp-chat m1"><?= e(t('New results!')) ?></span><span class="lp-chat m2"><?= e(t('Welcome!')) ?></span><span class="lp-chat m3"><?= e(t('Meeting on Friday')) ?></span>
         </div>
     </div>
@@ -135,7 +139,7 @@ $spark = '<svg class="spark" viewBox="0 0 30 30" fill="none" stroke="currentColo
                 ['P', 'Patience', 'Student', 'I check my results and my report card from my phone, even at home.'],
                 ['L', 'M. Léon', 'Director of Studies', 'Reviewing and publishing results has never been so organised.'],
             ] as $q): ?>
-                <figure class="lp-quote" style="margin:0"><span class="qm">❝</span><p><?= e(t($q[3])) ?></p>
+                <figure class="lp-quote" style="margin:0"><span class="qm">“</span><p><?= e(t($q[3])) ?></p>
                     <div class="who"><span class="av"><?= e($q[0]) ?></span><div><strong><?= e($q[1]) ?></strong><small><?= e(t($q[2])) ?></small><span class="lp-stars">★★★★★</span></div></div></figure>
             <?php endforeach; ?>
         </div>

@@ -13,7 +13,7 @@ $metaDesc    = t($pageDescription ?? ($siteName . ' provides quality education a
 <html lang="<?= e(Lang::locale()) ?>" dir="<?= e(Lang::dir()) ?>" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title><?= e($metaTitle) ?></title>
     <meta name="description" content="<?= e($metaDesc) ?>">
     <link rel="icon" type="image/svg+xml" href="<?= asset('images/logo.svg') ?>">

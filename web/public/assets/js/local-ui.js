@@ -42,7 +42,7 @@
     }
 
     Chart.prototype.animate = function () {
-        var self = this, start = null, dur = 900;
+        var self = this, start = null, dur = 650;
         if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { return this.render(1); }
         function step(ts) {
             if (start === null) start = ts;

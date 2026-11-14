@@ -3,7 +3,7 @@
 <html lang="<?= e(Lang::locale()) ?>" dir="<?= e(Lang::dir()) ?>" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title><?= e(t(APP_NAME)) ?> - <?= e(settings('school_short_name', 'École')) ?></title>
     <?php
     $favicon = settings('school_favicon');

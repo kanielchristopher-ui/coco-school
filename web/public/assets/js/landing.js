@@ -8,10 +8,12 @@
 
         function countUp(el) {
             if (el.dataset.done) return; el.dataset.done = '1';
+            var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
             var to = parseInt(el.getAttribute('data-count'), 10) || 0, suffix = el.getAttribute('data-suffix') || '', t0 = null;
+            if (calm) { el.textContent = to.toLocaleString(document.documentElement.lang || undefined) + suffix; return; }
             function step(ts) {
                 if (t0 === null) t0 = ts;
-                var p = Math.min(1, (ts - t0) / 1400), v = Math.round(to * (1 - Math.pow(1 - p, 3)));
+                var p = Math.min(1, (ts - t0) / 900), v = Math.round(to * (1 - Math.pow(1 - p, 4)));
                 el.textContent = v.toLocaleString(document.documentElement.lang || undefined) + suffix;
                 if (p < 1) requestAnimationFrame(step);
             }
